@@ -1,9 +1,12 @@
-import React from "react";
+// import React from "react";
 //import { Link } from "react-router-dom";
 import meImage from "./me.jpg";
 import whatnowImage from "./whatnow.png";
 import somniumImage from "./somnium.png";
+import visorImage from "./visor.png"
+import boredImage from "./bored.png"
 import rpsImage from "./rock-paper-scissors.png";
+
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Portfolio() {
@@ -141,6 +144,36 @@ function Portfolio() {
               </a>
               <h3 className="text-xl font-bold mb-4">Rock, Paper, Scissors</h3>
               <p>A Vanilla JavaScript game I created for the Odin Project.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <a
+                href="https://github.com/machiel27/visor"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={visorImage}
+                  alt="visor"
+                  className="mb-4 rounded-lg transition-transform duration-500 ease-in-out transform hover:rotate-12"
+                />
+              </a>
+              <h3 className="text-xl font-bold mb-4">Visor</h3>
+              <p>A Dashboard for viewing F1 stats. Built with Angular, Apache ECharts, .NET API, and MSSQL Database.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <a
+                href="https://lowdefy-bored.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={boredImage}
+                  alt="boredom-fighter"
+                  className="mb-4 rounded-lg transition-transform duration-500 ease-in-out transform hover:rotate-12"
+                />
+              </a>
+              <h3 className="text-xl font-bold mb-4">Boredom-Fighter</h3>
+              <p>An application that generates ideas and adds them to a to-do list. Built with Lowdefy</p>
             </div>
           </div>
         </div>
