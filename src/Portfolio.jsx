@@ -108,7 +108,7 @@ function Portfolio() {
                 Product Ordering System
               </h3>
               <p>
-                A basic CRUD application built with MSSQL Server, ASP.NET Core,
+                Please note this project is no longer being maintained. A basic CRUD application built with MSSQL Server, ASP.NET Core,
                 React JS and Bootstrap.
               </p>
             </div>
