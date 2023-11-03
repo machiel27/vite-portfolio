@@ -1,11 +1,11 @@
 // import React from "react";
 //import { Link } from "react-router-dom";
-import meImage from "./me.jpg";
-import whatnowImage from "./whatnow.png";
-import somniumImage from "./somnium.png";
-import visorImage from "./visor.png"
-import boredImage from "./bored.png"
-import rpsImage from "./rock-paper-scissors.png";
+import meImage from "./assets/me.jpg";
+import whatnowImage from "./assets/whatnow.png";
+import somniumImage from "./assets/somnium.png";
+import visorImage from "./assets/visor.png"
+import boredImage from "./assets/bored.png"
+import rpsImage from "./assets/rock-paper-scissors.png";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
