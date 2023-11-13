@@ -7,45 +7,12 @@ import boredImage from "./assets/bored.png";
 import rpsImage from "./assets/rock-paper-scissors.png";
 
 import { motion } from "framer-motion";
-
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Navbar from "./Navbar";
 
 function Portfolio() {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900">
-      {/* Navbar */}
-      <nav className="bg-white p-6 shadow-md">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="text-2xl font-bold hover:animate-bounce">Machiel</div>
-          <div className="flex items-center">
-            {/* <Link to="/under-construction" className="mx-4">
-              Projects
-            </Link>
-            <Link to="/under-construction" className="mx-4">
-              Blog
-            </Link>
-            <Link to="/under-construction" className="mx-4">
-              Contact
-            </Link> */}
-            <a
-              href="https://github.com/machiel27"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mx-4 transform transition-transform duration-300 hover:scale-125"
-            >
-              <FaGithub size={24} />
-            </a>
-            <a
-              href="https://linkedin.com/in/machiel-van-der-walt-550343242"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mx-4 transform transition-transform duration-300 hover:scale-125"
-            >
-              <FaLinkedin size={24} />
-            </a>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero Section */}
       <header className="bg-sky-700 text-white text-center py-20 animate-breathing">
@@ -64,22 +31,19 @@ function Portfolio() {
           />
           <div className="w-2/3 text-lg">
             <p>
-              I'm a full-stack web developer with a focus on building
-              applications for the insurance industry. My journey in the tech
-              world is all about using software to make our world a better place
-              – that's what keeps me going.
+              Hey there! I'm Machiel, a full-stack web developer with a knack
+              for creating cool apps in the insurance space. My tech adventure
+              is all about coding up solutions that make a real difference.
             </p>
             <p>
-              When I'm not coding, you'll catch me lost in a good book or
-              exploring virtual worlds through video games. Music is like a fuel
-              for my creative side, and it keeps me going in my day-to-day
-              tasks. And when it comes to sports, I'm a big fan of cricket,
-              football, and the adrenaline-pumping world of Formula 1 racing.
+              Outside the world of code, I'm probably deep into a book or
+              leveling up in a video game. Music is my creative juice, keeping
+              the energy high as I tackle daily challenges. Big into sports too
+              – whether it's cricket, football, or Formula 1.
             </p>
             <p>
-              I'd love for you to come along on my journey as I blend my
-              passions and skills, working on solutions one line of code at a
-              time.
+              Join me on this journey, where I mix my passions with my tech
+              skills, crafting solutions one line of code at a time.
             </p>
           </div>
         </div>
