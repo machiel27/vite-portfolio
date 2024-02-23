@@ -15,7 +15,7 @@ function Portfolio() {
       <Navbar />
 
       {/* Hero Section */}
-      <header className="bg-sky-700 text-white text-center py-20 animate-breathing">
+      <header className="bg-sky-700 text-white text-center py-20">
         <h1 className="text-5xl mb-4">Hello, I'm Machiel</h1>
         <p className="text-xl">A software developer from Earth.</p>
       </header>
@@ -31,19 +31,12 @@ function Portfolio() {
           />
           <div className="w-2/3 text-lg">
             <p>
-              Hey there! I'm Machiel, a full-stack web developer with a knack
-              for creating cool apps in the insurance space. My tech adventure
-              is all about coding up solutions that make a real difference.
+              I'm passionate about creating software that is both functional and
+              beautiful. I enjoy learning new technologies and I'm always
+              looking for ways to improve my skills.
             </p>
             <p>
-              Outside the world of code, I'm probably deep into a book or
-              leveling up in a video game. Music is my creative juice, keeping
-              the energy high as I tackle daily challenges. Big into sports too
-              – whether it's cricket, football, or Formula 1.
-            </p>
-            <p>
-              Join me on this journey, where I mix my passions with my tech
-              skills, crafting solutions one line of code at a time.
+              I'm proud to be a member of the <a className="underline text-slate-700" href="https://lowdefy.com/">Lowdefy</a> team.
             </p>
           </div>
         </div>
@@ -152,7 +145,7 @@ function Portfolio() {
               <h3 className="text-xl font-bold mb-4">Boredom-Fighter</h3>
               <p>
                 An application that generates ideas and adds them to a to-do
-                list. Built with Lowdefy
+                list. Built with Lowdefy.
               </p>
             </div>
           </div>

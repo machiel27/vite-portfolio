@@ -1,5 +1,4 @@
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Portfolio from './Portfolio';
 import UnderConstruction from './UnderConstruction';
 
