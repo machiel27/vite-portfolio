@@ -5,7 +5,7 @@ function Navbar() {
     <>
       <nav className="bg-white p-6 shadow-md">
         <div className="container mx-auto flex justify-between items-center">
-          <div className="text-2xl font-bold hover:animate-bounce">Machiel</div>
+          <div className="text-2xl font-bold hover:animate-bounce">Machiel 👨🏻‍💻🌍</div>
           <div className="flex items-center">
             {/* <Link to="/under-construction" className="mx-4">
               Projects
