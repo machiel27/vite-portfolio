@@ -8,20 +8,22 @@ import rpsImage from "./assets/rock-paper-scissors.png";
 
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
+import { WavyBackground } from "./components/ui/wavy-background";
 
 function Portfolio() {
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-900">
-      <Navbar />
-
+    <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
-      <header className="bg-sky-700 text-white text-center py-20">
-        <h1 className="text-5xl mb-4">Hello, I'm Machiel</h1>
-        <p className="text-xl">A software developer from Earth.</p>
+      <header>
+        <Navbar />
+        <WavyBackground className="text-white text-center py-20 z-0">
+          <h1 className="text-5xl mb-4">Hello, I'm Machiel</h1>
+          <p className="text-xl">A software developer from Earth.</p>
+        </WavyBackground>
       </header>
 
       {/* About Me */}
-      <section className="container mx-auto p-6">
+      <section className="container mx-auto p-6 mb-48">
         <h2 className="text-3xl font-bold mb-6">About Me</h2>
         <div className="flex items-center space-x-10">
           <img
@@ -36,19 +38,19 @@ function Portfolio() {
               looking for ways to improve my skills.
             </p>
             <p>
-              I'm proud to be a member of the <a className="underline text-slate-700" href="https://lowdefy.com/">Lowdefy</a> team.
+              I'm proud to be a member of the <a className="underline text-blue-600" href="https://lowdefy.com/">Lowdefy</a> team.
             </p>
           </div>
         </div>
       </section>
 
       {/* Projects */}
-      <section className="bg-gray-200 p-6">
+      <section className="bg-black p-6">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-6">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {/* Single Project */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-zinc-900 p-6 rounded-lg shadow-md">
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
                 <a
                   href="https://whatnow-three.vercel.app"
@@ -71,7 +73,7 @@ function Portfolio() {
                 and Bootstrap.
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-zinc-900 p-6 rounded-lg shadow-md">
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
                 <a
                   href="https://machiel27.github.io/landing-page/"
@@ -91,7 +93,7 @@ function Portfolio() {
                 practice Flexbox design.
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-zinc-900 p-6 rounded-lg shadow-md">
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
                 <a
                   href="https://machiel27.github.io/rock-paper-scissors/"
@@ -108,7 +110,7 @@ function Portfolio() {
               <h3 className="text-xl font-bold mb-4">Rock, Paper, Scissors</h3>
               <p>A Vanilla JavaScript game I created for the Odin Project.</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-zinc-900 p-6 rounded-lg shadow-md">
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
                 <a
                   href="https://github.com/machiel27/visor"
@@ -128,7 +130,7 @@ function Portfolio() {
                 ECharts, .NET API, and MSSQL Database.
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-zinc-900 p-6 rounded-lg shadow-md">
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
                 <a
                   href="https://lowdefy-bored.vercel.app/"
@@ -152,34 +154,6 @@ function Portfolio() {
         </div>
       </section>
 
-      {/* Animation Test */}
-      {/* <div className="bg-white p-6 m-10">
-        <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-          <a
-            href="https://lowdefy-bored.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={boredImage}
-              alt="boredom-fighter"
-              className="mb-4 rounded-lg transition-transform duration-500 ease-in-out transform hover:rotate-12"
-            />
-          </a>
-          <h3 className="text-xl font-bold mb-4">Boredom-Fighter</h3>
-          <p>
-            An application that generates ideas and adds them to a to-do list.
-            Built with Lowdefy
-          </p>
-        </motion.div>
-      </div> */}
-
-      {/* Footer */}
-      <footer className="bg-white p-6 mt-10">
-        <div className="container mx-auto text-center">
-          <p>&copy; {new Date().getFullYear()} Machiel. All rights reserved.</p>
-        </div>
-      </footer>
     </div>
   );
 }
