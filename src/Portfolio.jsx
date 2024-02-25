@@ -5,6 +5,7 @@ import somniumImage from "./assets/somnium.png";
 import visorImage from "./assets/visor.png";
 import boredImage from "./assets/bored.png";
 import rpsImage from "./assets/rock-paper-scissors.png";
+import threejsImage from "./assets/threejs.png";
 
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
@@ -148,6 +149,25 @@ function Portfolio() {
               <p>
                 An application that generates ideas and adds them to a to-do
                 list. Built with Lowdefy.
+              </p>
+            </div>
+            <div className="bg-zinc-900 p-6 rounded-lg shadow-md">
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
+                <a
+                  href="https://3js-test-nu.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={threejsImage}
+                    alt="3js"
+                    className="mb-4 rounded-lg"
+                  />
+                </a>
+              </motion.div>
+              <h3 className="text-xl font-bold mb-4">threeJS experiment</h3>
+              <p>
+                An experiment with threeJS and React.
               </p>
             </div>
           </div>
