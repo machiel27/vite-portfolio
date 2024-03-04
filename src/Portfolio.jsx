@@ -54,7 +54,7 @@ function Portfolio() {
             <div className="bg-zinc-900 p-6 rounded-lg shadow-md">
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
                 <a
-                  href="https://whatnow-three.vercel.app"
+                  href="https://github.com/machielvdw/whatnow"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
