@@ -11,7 +11,7 @@ export const WavyBackground = ({
     backgroundFill,
     blur = 10,
     speed = "fast",
-    waveOpacity = 0.5,
+    waveOpacity = 0.7,
     ...props
 }) => {
     const noise = createNoise3D();
@@ -50,11 +50,11 @@ export const WavyBackground = ({
     };
 
     const waveColors = colors ?? [
-        "#38bdf8",
-        "#818cf8",
-        "#c084fc",
-        "#e879f9",
-        "#22d3ee",
+        "#25a18e",
+        "#00a5cf",
+        "#9fffcb",
+        "#004e64",
+        "#7ae582",
     ];
     const drawWave = (n) => {
         nt += getSpeed();
@@ -64,7 +64,7 @@ export const WavyBackground = ({
             ctx.strokeStyle = waveColors[i % waveColors.length];
             for (x = 0; x < w; x += 5) {
                 var y = noise(x / 800, 0.3 * i, nt) * 100;
-                ctx.lineTo(x, y + h * 0.5); // adjust for height, currently at 50% of the container
+                ctx.lineTo(x, y + h * 0.5);
             }
             ctx.stroke();
             ctx.closePath();
